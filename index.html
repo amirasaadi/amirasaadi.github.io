@@ -3,6 +3,20 @@
 <title>Amir Asaadi personal site</title>
 <head>
 
+ <style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+ 
 </head>
 <body>
 
@@ -10,6 +24,16 @@
  <img src="Images/AmirAsaadi.jpg" style="width:200px;height:200px;">
  <br>
   <a href="https://www.amirasaadi.blog.ir" target="_blank" >See my blog</a> 
+ 
+ <button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+ 
   <hr>
   <b> Attended conferences and schools</b>
   <ul>
